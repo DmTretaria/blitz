@@ -1,0 +1,150 @@
+/* Estilos Globais */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #004a91; /* Azul corporativo (exemplo) */
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Importante para o padding não quebrar o layout */
+    font-size: 1rem;
+}
+
+input[type="date"] {
+    font-family: inherit; /* Faz o input date usar a mesma fonte */
+}
+
+button {
+    background-color: #0056b3; /* Azul */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #004a91;
+}
+
+button.perigo {
+    background-color: #d9534f; /* Vermelho */
+}
+button.perigo:hover {
+    background-color: #c9302c;
+}
+
+/* Links de Navegação */
+.nav-link {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Notificações */
+#notificacao {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+#notificacao.sucesso {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+#notificacao.erro {
+    background-color: #f2dede;
+    color: #a94442;
+}
+.hidden {
+    display: none;
+}
+
+/* Tabela de Relatório */
+.botoes-acao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+/* Destaques de vencimento */
+tr.vencendo-45d {
+    background-color: #fffacd; /* Amarelo claro */
+}
+tr.vencendo-7d {
+    background-color: #f2dede; /* Vermelho claro */
+    font-weight: 600;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLITZ Vencimentos - BH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="httpslogo.png" alt="Logo BH Supermercados" class="logo"> <h1>BLITZ 45 Dias - Setor Limpeza</h1>
+            <p>Registro de produtos para o relatório semanal.</p>
+        </header>
+
+        <form id="formBlitz">
+            <label for="produtoNome">Nome do Produto:</label>
+            <input type="text" id="produtoNome" required>
+
+            <label for="produtoCodigo">Código de Barras (GTIN):</label>
+            <input type="text" id="produtoCodigo" required>
+
+            <label for="produtoLote">Lote:</label>
+            <input type="text" id="produtoLote" required>
+
+            <label for="produtoVencimento">Data de Vencimento:</label>
+            <input type="date" id="produtoVencimento" required>
+
+            <button type="submit">Registrar Produto</button>
+        </form>
+
+        <div id="notificacao" class="hidden"></div>
+        
+        <a href="relatorio.html" class="nav-link">Ver Relatório Completo</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

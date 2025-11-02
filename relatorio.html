@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório BLITZ - BH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Relatório de Vencimentos</h1>
+            <p>Lista de produtos registrados para a BLITZ.</p>
+        </header>
+
+        <div class="botoes-acao">
+            <button id="exportarCSV">Exportar para CSV (Excel)</button>
+            <button id="limparDados" class="perigo">Limpar Registros</button>
+        </div>
+
+        <table id="tabelaRelatorio">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Cód. Barras</th>
+                    <th>Lote</th>
+                    <th>Vencimento</th>
+                    <th>Dias Restantes</th>
+                    <th>Registrado em</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaDados">
+                </tbody>
+        </table>
+        
+        <a href="index.html" class="nav-link">Voltar ao Registro</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
